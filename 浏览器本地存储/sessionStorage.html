@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>localStorage</h2>
+<button onclick="saveData()">点我保存读取一个数据</button>
+<button onclick="delData()">点我删除一个数据</button>
+<script>
+    function saveData() {
+        localStorage.setItem('msg','1234')
+       console.log(localStorage.getItem('msg'))
+    }
+    function delData() {
+        localStorage.removeItem('msg')
+    }
+</script>
+</body>
+</html>
